@@ -1,5 +1,69 @@
-@media screen and (max-width:375px) {
-    #mainContainer{
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree";
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    margin: 10em 0;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: fit-content;
+    border-style: groove;
+    box-shadow: 10px 15px;
+    border-color: black;
+}
+
+.image{
+    width: 100%;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.tag{
+    align-content: center;
+    text-align: center;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: start;
+    max-width: fit-content;
+    padding: 5px 10px;
+
+}
+.published{
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+.title{
+    max-width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.description{
+    
+    color:hsl(0, 0%, 50%);
+    font-size: 16px;
+    max-width: 17em;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 ;
+    align-items: center;
+}
+.author__image{
+    width: 20%;
+}
+.author__name{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+@media screen and (max-width:700px) {
+    .container{
         background-color: hsl(0, 0%, 100%);
         border-radius: 20px;
         padding: 10px;
@@ -7,6 +71,7 @@
         border-style: groove;
         box-shadow: 10px 10px;
         border-color: black;
+        margin-top: 1em;
     }
     svg{
         width: 100%;
@@ -19,65 +84,4 @@
         
     }
 }
-@media screen and (min-width:375px){
-    #mainContainer{
-        background-color: hsl(0, 0%, 100%);
-        border-radius: 20px;
-        padding: 20px;
-        max-width: fit-content;
-        border-style: groove;
-        box-shadow: 10px 10px;
-        border-color: black;
-    }
-    body{
-        background-color: hsl(47, 88%, 63%);
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-}
 
-
-
-
-#image{
-    justify-content: center;
-    align-items: center;
-}
-#tag{
-    align-content: center;
-    text-align: center;
-    background-color: hsl(47, 88%, 63%);
-    display: flex;
-    justify-content: start;
-    max-width: fit-content;
-    padding: 5px 10px;
-
-}
-#published{
-    max-width: fit-content;
-    margin-bottom: 10px;
-}
-h1{
-    max-width: fit-content;
-    font-size: 23px;
-}
-#description{
-    
-    color:hsl(0, 0%, 50%);
-    font-size: 16px;
-    max-width: 17em;
-}
-#author{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-.attribution{
-    max-width: 15em;
-}
